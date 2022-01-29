@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("image/nick-nice-gPm8h3DS1s4-unsplash.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ****** NAV ********* */
+.login,
+.fa-bars {
+  transition: 0.3s;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: space-between;
+  color: rgb(206, 206, 206);
+  position: relative;
+  padding: 0 3em;
+}
+
+#logo {
+  font-weight: lighter;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+#nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  padding: 5px 15px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 0.7em;
+}
+
+.login:hover {
+  background-color: rgb(206, 206, 206);
+  color: rgb(39, 39, 39);
+}
+
+#nav-list li {
+  margin: 1.3em;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.fa-bars {
+  font-size: 1.5em;
+  margin-left: 5em;
+  cursor: pointer;
+}
+
+.fa-bars:hover {
+  color: rgb(117, 129, 148);
+}
+
+/* ********************* */
