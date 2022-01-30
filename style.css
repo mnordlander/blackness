@@ -5,8 +5,15 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --main-color: rgb(206, 206, 206);
+  --main-hover: rgb(129, 137, 148);
+  --main-bg-color: rgb(31, 30, 30);
+}
 body {
-  background-image: url("image/nick-nice-gPm8h3DS1s4-unsplash.jpeg");
+  color: var(--main-color);
+  position: relative;
+  background: url("image/nick-nice-gPm8h3DS1s4-unsplash.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,10 +27,9 @@ body {
 
 nav {
   width: 100%;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(31, 30, 30);
   display: flex;
   justify-content: space-between;
-  color: rgb(206, 206, 206);
   position: relative;
   padding: 0 3em;
 }
@@ -57,14 +63,45 @@ nav {
   cursor: pointer;
 }
 
+.portfolio:hover,
+.about:hover {
+  color: var(--main-hover);
+}
+
 .fa-bars {
   font-size: 1.5em;
   margin-left: 5em;
   cursor: pointer;
+  padding: 0.3em;
 }
 
 .fa-bars:hover {
-  color: rgb(117, 129, 148);
+  color: var(--main-hover);
 }
 
 /* ********************* */
+
+#login-user {
+  display: flex;
+  justify-content: center;
+}
+
+#user-form {
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input {
+  margin: 10px 0;
+  height: 2.7em;
+}
+
+button {
+  width: fit-content;
+  padding: 4px 11px;
+  margin-top: 10px;
+}

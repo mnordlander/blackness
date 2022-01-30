@@ -11,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+<link rel="stylesheet" href="style.css">
 
 <body>
     <nav>
@@ -19,12 +23,25 @@
             <h1>Blackness</h1>
         </div>
         <ul id="nav-list">
-            <li class="nav-item">Portfolio</li>
-            <li class="nav-item">About</li>
+            <li class="nav-item portfolio">Portfolio</li>
+            <li class="nav-item about">About</li>
             <li class="nav-item login">Login</li>
             <i class="nav-item fas fa-bars"></i>
         </ul>
     </nav>
+    <div id="login-user">
+        <div id="user-form">
+            <label for="username">
+                <p>Username</p>
+            </label>
+            <input type="text" name="username" id="username" placeholder="enter username">
+            <label for="Password">
+                <p>Password</p>
+            </label>
+            <input type="text" name="password" id="password" placeholder="Enter password">
+            <button>Submit</button>
+        </div>
+    </div>
 </body>
 
 </html>
