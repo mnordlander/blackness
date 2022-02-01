@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  transition: 0.5s;
 }
 
 /* ****** NAV ********* */
@@ -85,12 +86,12 @@ nav {
 #login-user {
   display: flex;
   justify-content: center;
-  z-index: -1;
   position: absolute;
   left: 50%;
   margin-left: -10.5vw;
   top: 50%;
   margin-top: -30vh;
+  transition: 0.8s;
 }
 
 /* LOGIN SQUARE ANIMATION */

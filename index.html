@@ -17,8 +17,8 @@
 </head>
 <link rel="stylesheet" href="style.css">
 
-<body>
-    <div id="login-user">
+<body class="login-body-hide">
+    <div id="login-user" class="login-user-hide">
         <div id="user-form">
             <label for="username">
                 <p>Username</p>
@@ -40,11 +40,11 @@
             <li class="nav-item portfolio">Portfolio</li>
             <li class="nav-item about">About</li>
             <li class="nav-item about">Support</li>
-            <li class="nav-item login">Login</li>
+            <li onclick="toggleLogin();" class="nav-item login">Login</li>
             <i class="nav-item fas fa-bars"></i>
         </ul>
     </nav>
-
+    <script src="app.js" type="text/javascript"></script>
 </body>
 
 </html>
