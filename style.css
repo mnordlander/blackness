@@ -17,6 +17,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 /* ****** NAV ********* */
@@ -84,7 +85,27 @@ nav {
 #login-user {
   display: flex;
   justify-content: center;
+  z-index: -1;
+  position: absolute;
+  left: 50%;
+  margin-left: -10.5vw;
+  top: 50%;
+  margin-top: -30vh;
 }
+
+/* LOGIN SQUARE ANIMATION */
+
+.login-user-hide {
+  transform: translateY(-130%);
+  opacity: 0%;
+}
+
+.login-user-show {
+  transform: translateY(0%);
+  opacity: 100%;
+}
+
+/* ****************************** */
 
 #user-form {
   background-color: var(--main-bg-color);
