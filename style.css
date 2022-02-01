@@ -98,10 +98,12 @@ nav {
 input {
   margin: 10px 0;
   height: 2.7em;
+  text-align: center;
 }
 
 button {
   width: fit-content;
   padding: 4px 11px;
   margin-top: 10px;
+  align-self: center;
 }
